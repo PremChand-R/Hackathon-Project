@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-02-27T17:09:07 IST" name="Suite" finished-at="2024-02-27T17:12:52 IST" duration-ms="224675">
+    <groups>
+    </groups>
+    <test started-at="2024-02-27T17:09:07 IST" name="Test" finished-at="2024-02-27T17:12:52 IST" duration-ms="224675">
+      <class name="TestCases.Tc001_EmiCalculator">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:TestCases.Tc001_EmiCalculator@1a942c18]" started-at="2024-02-27T17:09:08 IST" name="setUp" finished-at="2024-02-27T17:09:50 IST" duration-ms="41865" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="inputCalculator()[pri:1, instance:TestCases.Tc001_EmiCalculator@1a942c18]" started-at="2024-02-27T17:09:50 IST" name="inputCalculator" finished-at="2024-02-27T17:09:55 IST" duration-ms="5462" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inputCalculator -->
+        <test-method signature="printCarEmiData()[pri:2, instance:TestCases.Tc001_EmiCalculator@1a942c18]" started-at="2024-02-27T17:09:56 IST" name="printCarEmiData" finished-at="2024-02-27T17:10:04 IST" duration-ms="8603" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printCarEmiData -->
+        <test-method signature="homeLoanCalculator()[pri:3, instance:TestCases.Tc001_EmiCalculator@1a942c18]" started-at="2024-02-27T17:10:04 IST" name="homeLoanCalculator" finished-at="2024-02-27T17:10:06 IST" duration-ms="1766" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homeLoanCalculator -->
+        <test-method signature="printHomeEmiData()[pri:4, instance:TestCases.Tc001_EmiCalculator@1a942c18]" started-at="2024-02-27T17:10:06 IST" name="printHomeEmiData" finished-at="2024-02-27T17:10:11 IST" duration-ms="5240" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printHomeEmiData -->
+        <test-method signature="loanCalculator()[pri:5, instance:TestCases.Tc001_EmiCalculator@1a942c18]" started-at="2024-02-27T17:10:12 IST" name="loanCalculator" finished-at="2024-02-27T17:10:13 IST" duration-ms="1711" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loanCalculator -->
+        <test-method signature="loanEmiCalcUICheck()[pri:6, instance:TestCases.Tc001_EmiCalculator@1a942c18]" started-at="2024-02-27T17:10:13 IST" name="loanEmiCalcUICheck" finished-at="2024-02-27T17:11:11 IST" duration-ms="57904" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loanEmiCalcUICheck -->
+        <test-method signature="loanAmountCalcUICheck()[pri:7, instance:TestCases.Tc001_EmiCalculator@1a942c18]" started-at="2024-02-27T17:11:11 IST" name="loanAmountCalcUICheck" finished-at="2024-02-27T17:12:02 IST" duration-ms="50922" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loanAmountCalcUICheck -->
+        <test-method signature="loanTenureCalcUICheck()[pri:8, instance:TestCases.Tc001_EmiCalculator@1a942c18]" started-at="2024-02-27T17:12:02 IST" name="loanTenureCalcUICheck" finished-at="2024-02-27T17:12:52 IST" duration-ms="49590" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loanTenureCalcUICheck -->
+      </class> <!-- TestCases.Tc001_EmiCalculator -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
