@@ -2,13 +2,13 @@ package stepDefinitions;
 
 import java.util.Properties;
 
+//import org.junit.jupiter.api.BeforeAll;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
 import testBase.baseClass;
-import io.cucumber.java.AfterStep;
-import io.cucumber.java.BeforeAll;
+import io.cucumber.java.*;
 import io.cucumber.java.Scenario;
 
 public class Hooks {
@@ -17,7 +17,7 @@ public class Hooks {
 	static baseClass bc=new baseClass();
 	
 	@BeforeAll
-	public void before_or_after_all() throws Exception
+	public static void before_or_after_all() throws Exception
 	{	//create driver
 		p=baseClass.getProperties();
 		// navigate to emicalculator page
