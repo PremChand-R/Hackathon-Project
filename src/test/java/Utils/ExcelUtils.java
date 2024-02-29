@@ -12,11 +12,13 @@ public class ExcelUtils {
 	static XSSFSheet sheet;
 	
 	public static void createSheet(String sheetName) {
+		//creating sheet
 		sheet=book.createSheet(sheetName);
 	}
 	static FileOutputStream fo;
 	static FileInputStream fi;
 	public static String[] readCarEmiData() throws IOException {
+		//reading CarEmi Input Data
 		fi=new FileInputStream(System.getProperty("user.dir")+"\\TestData\\input_Data.xlsx");
 		XSSFWorkbook workbook = new XSSFWorkbook(fi);
 		XSSFSheet sheet1 = workbook.getSheet("InputData");
@@ -25,6 +27,7 @@ public class ExcelUtils {
 		return carEmiData;
 	}
 	public static String[] readHomeEmiData() throws IOException {
+		//reading HomeEmi Input Data
 		fi=new FileInputStream(System.getProperty("user.dir")+"\\TestData\\input_Data.xlsx");
 		XSSFWorkbook workbook = new XSSFWorkbook(fi);
 		XSSFSheet sheet1 = workbook.getSheet("InputData");
@@ -36,20 +39,20 @@ public class ExcelUtils {
 	
 	public static void write(int rownum, String[] data)throws IOException {
 
-		//Opening the excel file
+		//Creating  the row
 		XSSFRow row =sheet.createRow(rownum); 
+		//Setting the data in the column
 		for(int i=0;i<data.length;i++) {
 			row.createCell(i).setCellValue(data[i]);
 		}
-		//Setting the data in the column
-		//cell.setCellValue(data); 
-
+		//writing to results file
 		fo=new FileOutputStream(System.getProperty("user.dir")+"\\TestData\\results.xlsx");
 		book.write(fo);
 		
 
 	}
 	public static void closeBook() throws IOException {
+		//closing workbook and files
 		book.close();
 		fo.flush();
 		fo.close();

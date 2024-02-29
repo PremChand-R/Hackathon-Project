@@ -4,15 +4,38 @@
   <listeners>
     <listener class-name="Utils.ExtentReportCreator"/>
   </listeners>
-  <test thread-count="5" name="Test(failed)">
+  <test thread-count="5" name="Test Chrome(failed)">
     <parameter name="browser" value="Chrome"/>
+    <groups>
+      <run>
+        <include name="sanity"/>
+        <include name="smoke"/>
+        <include name="regression"/>
+      </run>
+    </groups>
     <classes>
       <class name="TestCases.Tc001_EmiCalculator">
         <methods>
+          <include name="verifyLoanEmiCalcElements"/>
+          <include name="verifyCarLoanResults"/>
+          <include name="validateCarLoanResults"/>
+          <include name="clickLoanTenureCalculator"/>
+          <include name="inputCarLoanData"/>
+          <include name="verifyLoanTenureCalcElements"/>
+          <include name="loanAmountCalcUICheck"/>
+          <include name="homeLoanCalculator"/>
+          <include name="verifyLoanAMTCalcElements"/>
           <include name="loanTenureCalcUICheck"/>
-          <include name="setUp"/>
+          <include name="loanEmiCalcUICheck"/>
+          <include name="printCarEmiData"/>
+          <include name="verifyHomeLoanElements"/>
+          <include name="clickLoanAMTCalculator"/>
+          <include name="verifyCarLoanElements"/>
+          <include name="printHomeEmiData"/>
+          <include name="loanCalculator"/>
+          <include name="carLoanCalculator"/>
         </methods>
       </class> <!-- TestCases.Tc001_EmiCalculator -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Test Chrome(failed) -->
 </suite> <!-- Failed suite [Suite] -->

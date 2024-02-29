@@ -1,13 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+<testng-results ignored="0" total="19" passed="19" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-27T17:09:07 IST" name="Suite" finished-at="2024-02-27T17:12:52 IST" duration-ms="224675">
+  <suite started-at="2024-02-29T21:13:59 IST" name="Suite" finished-at="2024-02-29T21:17:19 IST" duration-ms="200415">
     <groups>
+      <group name="regression">
+        <method signature="Tc001_EmiCalculator.carLoanCalculator()[pri:1, instance:TestCases.Tc001_EmiCalculator@771a660]" name="carLoanCalculator" class="TestCases.Tc001_EmiCalculator"/>
+        <method signature="Tc001_EmiCalculator.clickLoanAMTCalculator()[pri:13, instance:TestCases.Tc001_EmiCalculator@771a660]" name="clickLoanAMTCalculator" class="TestCases.Tc001_EmiCalculator"/>
+        <method signature="Tc001_EmiCalculator.clickLoanTenureCalculator()[pri:16, instance:TestCases.Tc001_EmiCalculator@771a660]" name="clickLoanTenureCalculator" class="TestCases.Tc001_EmiCalculator"/>
+        <method signature="Tc001_EmiCalculator.homeLoanCalculator()[pri:7, instance:TestCases.Tc001_EmiCalculator@771a660]" name="homeLoanCalculator" class="TestCases.Tc001_EmiCalculator"/>
+        <method signature="Tc001_EmiCalculator.initiateDriver(java.lang.String)[pri:0, instance:TestCases.Tc001_EmiCalculator@771a660]" name="initiateDriver" class="TestCases.Tc001_EmiCalculator"/>
+        <method signature="Tc001_EmiCalculator.inputCarLoanData()[pri:2, instance:TestCases.Tc001_EmiCalculator@771a660]" name="inputCarLoanData" class="TestCases.Tc001_EmiCalculator"/>
+        <method signature="Tc001_EmiCalculator.loanAmountCalcUICheck()[pri:15, instance:TestCases.Tc001_EmiCalculator@771a660]" name="loanAmountCalcUICheck" class="TestCases.Tc001_EmiCalculator"/>
+        <method signature="Tc001_EmiCalculator.loanCalculator()[pri:10, instance:TestCases.Tc001_EmiCalculator@771a660]" name="loanCalculator" class="TestCases.Tc001_EmiCalculator"/>
+        <method signature="Tc001_EmiCalculator.loanEmiCalcUICheck()[pri:12, instance:TestCases.Tc001_EmiCalculator@771a660]" name="loanEmiCalcUICheck" class="TestCases.Tc001_EmiCalculator"/>
+        <method signature="Tc001_EmiCalculator.loanTenureCalcUICheck()[pri:18, instance:TestCases.Tc001_EmiCalculator@771a660]" name="loanTenureCalcUICheck" class="TestCases.Tc001_EmiCalculator"/>
+        <method signature="Tc001_EmiCalculator.printCarEmiData()[pri:4, instance:TestCases.Tc001_EmiCalculator@771a660]" name="printCarEmiData" class="TestCases.Tc001_EmiCalculator"/>
+        <method signature="Tc001_EmiCalculator.printHomeEmiData()[pri:9, instance:TestCases.Tc001_EmiCalculator@771a660]" name="printHomeEmiData" class="TestCases.Tc001_EmiCalculator"/>
+        <method signature="Tc001_EmiCalculator.validateCarLoanResults()[pri:6, instance:TestCases.Tc001_EmiCalculator@771a660]" name="validateCarLoanResults" class="TestCases.Tc001_EmiCalculator"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="Tc001_EmiCalculator.carLoanCalculator()[pri:1, instance:TestCases.Tc001_EmiCalculator@771a660]" name="carLoanCalculator" class="TestCases.Tc001_EmiCalculator"/>
+        <method signature="Tc001_EmiCalculator.clickLoanAMTCalculator()[pri:13, instance:TestCases.Tc001_EmiCalculator@771a660]" name="clickLoanAMTCalculator" class="TestCases.Tc001_EmiCalculator"/>
+        <method signature="Tc001_EmiCalculator.clickLoanTenureCalculator()[pri:16, instance:TestCases.Tc001_EmiCalculator@771a660]" name="clickLoanTenureCalculator" class="TestCases.Tc001_EmiCalculator"/>
+        <method signature="Tc001_EmiCalculator.homeLoanCalculator()[pri:7, instance:TestCases.Tc001_EmiCalculator@771a660]" name="homeLoanCalculator" class="TestCases.Tc001_EmiCalculator"/>
+        <method signature="Tc001_EmiCalculator.initiateDriver(java.lang.String)[pri:0, instance:TestCases.Tc001_EmiCalculator@771a660]" name="initiateDriver" class="TestCases.Tc001_EmiCalculator"/>
+        <method signature="Tc001_EmiCalculator.inputCarLoanData()[pri:2, instance:TestCases.Tc001_EmiCalculator@771a660]" name="inputCarLoanData" class="TestCases.Tc001_EmiCalculator"/>
+        <method signature="Tc001_EmiCalculator.loanAmountCalcUICheck()[pri:15, instance:TestCases.Tc001_EmiCalculator@771a660]" name="loanAmountCalcUICheck" class="TestCases.Tc001_EmiCalculator"/>
+        <method signature="Tc001_EmiCalculator.loanCalculator()[pri:10, instance:TestCases.Tc001_EmiCalculator@771a660]" name="loanCalculator" class="TestCases.Tc001_EmiCalculator"/>
+        <method signature="Tc001_EmiCalculator.loanEmiCalcUICheck()[pri:12, instance:TestCases.Tc001_EmiCalculator@771a660]" name="loanEmiCalcUICheck" class="TestCases.Tc001_EmiCalculator"/>
+        <method signature="Tc001_EmiCalculator.printCarEmiData()[pri:4, instance:TestCases.Tc001_EmiCalculator@771a660]" name="printCarEmiData" class="TestCases.Tc001_EmiCalculator"/>
+        <method signature="Tc001_EmiCalculator.printHomeEmiData()[pri:9, instance:TestCases.Tc001_EmiCalculator@771a660]" name="printHomeEmiData" class="TestCases.Tc001_EmiCalculator"/>
+        <method signature="Tc001_EmiCalculator.validateCarLoanResults()[pri:6, instance:TestCases.Tc001_EmiCalculator@771a660]" name="validateCarLoanResults" class="TestCases.Tc001_EmiCalculator"/>
+        <method signature="Tc001_EmiCalculator.verifyCarLoanResults()[pri:5, instance:TestCases.Tc001_EmiCalculator@771a660]" name="verifyCarLoanResults" class="TestCases.Tc001_EmiCalculator"/>
+      </group> <!-- smoke -->
+      <group name="sanity">
+        <method signature="Tc001_EmiCalculator.carLoanCalculator()[pri:1, instance:TestCases.Tc001_EmiCalculator@771a660]" name="carLoanCalculator" class="TestCases.Tc001_EmiCalculator"/>
+        <method signature="Tc001_EmiCalculator.clickLoanAMTCalculator()[pri:13, instance:TestCases.Tc001_EmiCalculator@771a660]" name="clickLoanAMTCalculator" class="TestCases.Tc001_EmiCalculator"/>
+        <method signature="Tc001_EmiCalculator.clickLoanTenureCalculator()[pri:16, instance:TestCases.Tc001_EmiCalculator@771a660]" name="clickLoanTenureCalculator" class="TestCases.Tc001_EmiCalculator"/>
+        <method signature="Tc001_EmiCalculator.homeLoanCalculator()[pri:7, instance:TestCases.Tc001_EmiCalculator@771a660]" name="homeLoanCalculator" class="TestCases.Tc001_EmiCalculator"/>
+        <method signature="Tc001_EmiCalculator.initiateDriver(java.lang.String)[pri:0, instance:TestCases.Tc001_EmiCalculator@771a660]" name="initiateDriver" class="TestCases.Tc001_EmiCalculator"/>
+        <method signature="Tc001_EmiCalculator.inputCarLoanData()[pri:2, instance:TestCases.Tc001_EmiCalculator@771a660]" name="inputCarLoanData" class="TestCases.Tc001_EmiCalculator"/>
+        <method signature="Tc001_EmiCalculator.loanAmountCalcUICheck()[pri:15, instance:TestCases.Tc001_EmiCalculator@771a660]" name="loanAmountCalcUICheck" class="TestCases.Tc001_EmiCalculator"/>
+        <method signature="Tc001_EmiCalculator.loanCalculator()[pri:10, instance:TestCases.Tc001_EmiCalculator@771a660]" name="loanCalculator" class="TestCases.Tc001_EmiCalculator"/>
+        <method signature="Tc001_EmiCalculator.loanEmiCalcUICheck()[pri:12, instance:TestCases.Tc001_EmiCalculator@771a660]" name="loanEmiCalcUICheck" class="TestCases.Tc001_EmiCalculator"/>
+        <method signature="Tc001_EmiCalculator.loanTenureCalcUICheck()[pri:18, instance:TestCases.Tc001_EmiCalculator@771a660]" name="loanTenureCalcUICheck" class="TestCases.Tc001_EmiCalculator"/>
+        <method signature="Tc001_EmiCalculator.printCarEmiData()[pri:4, instance:TestCases.Tc001_EmiCalculator@771a660]" name="printCarEmiData" class="TestCases.Tc001_EmiCalculator"/>
+        <method signature="Tc001_EmiCalculator.printHomeEmiData()[pri:9, instance:TestCases.Tc001_EmiCalculator@771a660]" name="printHomeEmiData" class="TestCases.Tc001_EmiCalculator"/>
+        <method signature="Tc001_EmiCalculator.verifyCarLoanElements()[pri:3, instance:TestCases.Tc001_EmiCalculator@771a660]" name="verifyCarLoanElements" class="TestCases.Tc001_EmiCalculator"/>
+        <method signature="Tc001_EmiCalculator.verifyHomeLoanElements()[pri:8, instance:TestCases.Tc001_EmiCalculator@771a660]" name="verifyHomeLoanElements" class="TestCases.Tc001_EmiCalculator"/>
+        <method signature="Tc001_EmiCalculator.verifyLoanAMTCalcElements()[pri:14, instance:TestCases.Tc001_EmiCalculator@771a660]" name="verifyLoanAMTCalcElements" class="TestCases.Tc001_EmiCalculator"/>
+        <method signature="Tc001_EmiCalculator.verifyLoanEmiCalcElements()[pri:11, instance:TestCases.Tc001_EmiCalculator@771a660]" name="verifyLoanEmiCalcElements" class="TestCases.Tc001_EmiCalculator"/>
+        <method signature="Tc001_EmiCalculator.verifyLoanTenureCalcElements()[pri:17, instance:TestCases.Tc001_EmiCalculator@771a660]" name="verifyLoanTenureCalcElements" class="TestCases.Tc001_EmiCalculator"/>
+      </group> <!-- sanity -->
     </groups>
-    <test started-at="2024-02-27T17:09:07 IST" name="Test" finished-at="2024-02-27T17:12:52 IST" duration-ms="224675">
+    <test started-at="2024-02-29T21:13:59 IST" name="Test Chrome" finished-at="2024-02-29T21:17:19 IST" duration-ms="200415">
       <class name="TestCases.Tc001_EmiCalculator">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:TestCases.Tc001_EmiCalculator@1a942c18]" started-at="2024-02-27T17:09:08 IST" name="setUp" finished-at="2024-02-27T17:09:50 IST" duration-ms="41865" status="PASS">
+        <test-method signature="initiateDriver(java.lang.String)[pri:0, instance:TestCases.Tc001_EmiCalculator@771a660]" started-at="2024-02-29T21:14:00 IST" name="initiateDriver" finished-at="2024-02-29T21:14:41 IST" duration-ms="41813" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -17,40 +66,80 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="inputCalculator()[pri:1, instance:TestCases.Tc001_EmiCalculator@1a942c18]" started-at="2024-02-27T17:09:50 IST" name="inputCalculator" finished-at="2024-02-27T17:09:55 IST" duration-ms="5462" status="PASS">
+        </test-method> <!-- initiateDriver -->
+        <test-method signature="carLoanCalculator()[pri:1, instance:TestCases.Tc001_EmiCalculator@771a660]" started-at="2024-02-29T21:14:42 IST" name="carLoanCalculator" finished-at="2024-02-29T21:14:47 IST" duration-ms="5421" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- inputCalculator -->
-        <test-method signature="printCarEmiData()[pri:2, instance:TestCases.Tc001_EmiCalculator@1a942c18]" started-at="2024-02-27T17:09:56 IST" name="printCarEmiData" finished-at="2024-02-27T17:10:04 IST" duration-ms="8603" status="PASS">
+        </test-method> <!-- carLoanCalculator -->
+        <test-method signature="inputCarLoanData()[pri:2, instance:TestCases.Tc001_EmiCalculator@771a660]" started-at="2024-02-29T21:14:48 IST" name="inputCarLoanData" finished-at="2024-02-29T21:14:50 IST" duration-ms="2069" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inputCarLoanData -->
+        <test-method signature="verifyCarLoanElements()[pri:3, instance:TestCases.Tc001_EmiCalculator@771a660]" started-at="2024-02-29T21:14:50 IST" name="verifyCarLoanElements" finished-at="2024-02-29T21:14:50 IST" duration-ms="201" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCarLoanElements -->
+        <test-method signature="printCarEmiData()[pri:4, instance:TestCases.Tc001_EmiCalculator@771a660]" started-at="2024-02-29T21:14:50 IST" name="printCarEmiData" finished-at="2024-02-29T21:15:05 IST" duration-ms="14566" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- printCarEmiData -->
-        <test-method signature="homeLoanCalculator()[pri:3, instance:TestCases.Tc001_EmiCalculator@1a942c18]" started-at="2024-02-27T17:10:04 IST" name="homeLoanCalculator" finished-at="2024-02-27T17:10:06 IST" duration-ms="1766" status="PASS">
+        <test-method signature="verifyCarLoanResults()[pri:5, instance:TestCases.Tc001_EmiCalculator@771a660]" started-at="2024-02-29T21:15:05 IST" name="verifyCarLoanResults" finished-at="2024-02-29T21:15:05 IST" duration-ms="82" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCarLoanResults -->
+        <test-method signature="validateCarLoanResults()[pri:6, instance:TestCases.Tc001_EmiCalculator@771a660]" started-at="2024-02-29T21:15:05 IST" name="validateCarLoanResults" finished-at="2024-02-29T21:15:14 IST" duration-ms="8886" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCarLoanResults -->
+        <test-method signature="homeLoanCalculator()[pri:7, instance:TestCases.Tc001_EmiCalculator@771a660]" started-at="2024-02-29T21:15:14 IST" name="homeLoanCalculator" finished-at="2024-02-29T21:15:16 IST" duration-ms="1829" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homeLoanCalculator -->
-        <test-method signature="printHomeEmiData()[pri:4, instance:TestCases.Tc001_EmiCalculator@1a942c18]" started-at="2024-02-27T17:10:06 IST" name="printHomeEmiData" finished-at="2024-02-27T17:10:11 IST" duration-ms="5240" status="PASS">
+        <test-method signature="verifyHomeLoanElements()[pri:8, instance:TestCases.Tc001_EmiCalculator@771a660]" started-at="2024-02-29T21:15:17 IST" name="verifyHomeLoanElements" finished-at="2024-02-29T21:15:17 IST" duration-ms="494" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomeLoanElements -->
+        <test-method signature="printHomeEmiData()[pri:9, instance:TestCases.Tc001_EmiCalculator@771a660]" started-at="2024-02-29T21:15:17 IST" name="printHomeEmiData" finished-at="2024-02-29T21:15:26 IST" duration-ms="8829" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- printHomeEmiData -->
-        <test-method signature="loanCalculator()[pri:5, instance:TestCases.Tc001_EmiCalculator@1a942c18]" started-at="2024-02-27T17:10:12 IST" name="loanCalculator" finished-at="2024-02-27T17:10:13 IST" duration-ms="1711" status="PASS">
+        <test-method signature="loanCalculator()[pri:10, instance:TestCases.Tc001_EmiCalculator@771a660]" started-at="2024-02-29T21:15:26 IST" name="loanCalculator" finished-at="2024-02-29T21:15:28 IST" duration-ms="1798" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loanCalculator -->
-        <test-method signature="loanEmiCalcUICheck()[pri:6, instance:TestCases.Tc001_EmiCalculator@1a942c18]" started-at="2024-02-27T17:10:13 IST" name="loanEmiCalcUICheck" finished-at="2024-02-27T17:11:11 IST" duration-ms="57904" status="PASS">
+        <test-method signature="verifyLoanEmiCalcElements()[pri:11, instance:TestCases.Tc001_EmiCalculator@771a660]" started-at="2024-02-29T21:15:28 IST" name="verifyLoanEmiCalcElements" finished-at="2024-02-29T21:15:29 IST" duration-ms="319" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoanEmiCalcElements -->
+        <test-method signature="loanEmiCalcUICheck()[pri:12, instance:TestCases.Tc001_EmiCalculator@771a660]" started-at="2024-02-29T21:15:29 IST" name="loanEmiCalcUICheck" finished-at="2024-02-29T21:16:09 IST" duration-ms="40421" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loanEmiCalcUICheck -->
-        <test-method signature="loanAmountCalcUICheck()[pri:7, instance:TestCases.Tc001_EmiCalculator@1a942c18]" started-at="2024-02-27T17:11:11 IST" name="loanAmountCalcUICheck" finished-at="2024-02-27T17:12:02 IST" duration-ms="50922" status="PASS">
+        <test-method signature="clickLoanAMTCalculator()[pri:13, instance:TestCases.Tc001_EmiCalculator@771a660]" started-at="2024-02-29T21:16:10 IST" name="clickLoanAMTCalculator" finished-at="2024-02-29T21:16:10 IST" duration-ms="113" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickLoanAMTCalculator -->
+        <test-method signature="verifyLoanAMTCalcElements()[pri:14, instance:TestCases.Tc001_EmiCalculator@771a660]" started-at="2024-02-29T21:16:10 IST" name="verifyLoanAMTCalcElements" finished-at="2024-02-29T21:16:10 IST" duration-ms="185" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoanAMTCalcElements -->
+        <test-method signature="loanAmountCalcUICheck()[pri:15, instance:TestCases.Tc001_EmiCalculator@771a660]" started-at="2024-02-29T21:16:10 IST" name="loanAmountCalcUICheck" finished-at="2024-02-29T21:16:44 IST" duration-ms="33322" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loanAmountCalcUICheck -->
-        <test-method signature="loanTenureCalcUICheck()[pri:8, instance:TestCases.Tc001_EmiCalculator@1a942c18]" started-at="2024-02-27T17:12:02 IST" name="loanTenureCalcUICheck" finished-at="2024-02-27T17:12:52 IST" duration-ms="49590" status="PASS">
+        <test-method signature="clickLoanTenureCalculator()[pri:16, instance:TestCases.Tc001_EmiCalculator@771a660]" started-at="2024-02-29T21:16:44 IST" name="clickLoanTenureCalculator" finished-at="2024-02-29T21:16:44 IST" duration-ms="107" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickLoanTenureCalculator -->
+        <test-method signature="verifyLoanTenureCalcElements()[pri:17, instance:TestCases.Tc001_EmiCalculator@771a660]" started-at="2024-02-29T21:16:44 IST" name="verifyLoanTenureCalcElements" finished-at="2024-02-29T21:16:44 IST" duration-ms="126" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoanTenureCalcElements -->
+        <test-method signature="loanTenureCalcUICheck()[pri:18, instance:TestCases.Tc001_EmiCalculator@771a660]" started-at="2024-02-29T21:16:44 IST" name="loanTenureCalcUICheck" finished-at="2024-02-29T21:17:19 IST" duration-ms="34711" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loanTenureCalcUICheck -->
       </class> <!-- TestCases.Tc001_EmiCalculator -->
-    </test> <!-- Test -->
+    </test> <!-- Test Chrome -->
   </suite> <!-- Suite -->
 </testng-results>

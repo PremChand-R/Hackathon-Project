@@ -26,11 +26,11 @@ public class ExtentReportCreator implements ITestListener
 	String repName;
  
 	public void onStart(ITestContext testContext) 
-	{
+	{	//report Name
 		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
 		repName = "Test-Report-" + timeStamp + ".html";
 		sparkReporter = new ExtentSparkReporter(".\\reports\\" + repName);
- 
+		//setting spart report configurations
 		sparkReporter.config().setDocumentTitle("Find Interest Header view Report"); 
 		sparkReporter.config().setReportName("EMI Calculator Testing"); 
 		sparkReporter.config().setTheme(Theme.STANDARD);
@@ -54,6 +54,7 @@ public class ExtentReportCreator implements ITestListener
 		test = extent.createTest(result.getTestClass().getName());
 		test.assignCategory(result.getMethod().getGroups()); // to display groups in report
 		test.log(Status.PASS,result.getName()+" got successfully executed");
+		//Adding ScreenShot to reports
 		try
 		{
 			String imgPath = new baseClass().captureScreen(result.getName());
@@ -71,6 +72,7 @@ public class ExtentReportCreator implements ITestListener
 		test.assignCategory(result.getMethod().getGroups());
 		test.log(Status.FAIL,result.getName()+" got failed");
 		test.log(Status.INFO, result.getThrowable().getMessage());
+		//Adding ScreenShot to reports
 		try
 		{
 			String imgPath = new baseClass().captureScreen(result.getName());

@@ -2,20 +2,24 @@ package pageObjects;
 
 import java.io.IOException;
 import java.util.List;
+
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-
+import org.testng.asserts.SoftAssert;
 import Utils.ExcelUtils;
 
 public class HomeLoanCalculator extends basePage {
 	String yrCol1,yrCol2,yrCol3,yrCol4,yrCol5,yrCol6,yrCol7;
 	String[] homeLoandata;
+	static SoftAssert asserts= new SoftAssert();
 	public HomeLoanCalculator(WebDriver driver) {
 		super(driver);
 	}
 	
-	
+	@FindBy(id="menu-item-dropdown-2696")
+	 WebElement calcDropDown;
 	@FindBy(id="menu-item-3294")
 	WebElement homeLoanCalc;
 	
@@ -37,11 +41,16 @@ public class HomeLoanCalculator extends basePage {
 	List<WebElement> tableHead;
 	@FindBy(xpath="//*[@class=\"row no-margin yearlypaymentdetails\"]/td")
 	List<WebElement> tableData;
+	@FindBy(id="paymentschedule")
+	WebElement table;
+	@FindBy(id="monthlyhomeloanpaymentsummarywrapper")
+	WebElement result;
+	
 	public void clickHomeLoan() {
 		calcDropDown.click();
 		homeLoanCalc.click();
-		
 	}
+	
 	public void fillDetails() throws IOException {
 		homeLoandata=ExcelUtils.readHomeEmiData();
 		
@@ -72,7 +81,10 @@ public class HomeLoanCalculator extends basePage {
 		
 		
 	}
-	
+	public void moveToTable() {
+		JavascriptExecutor js=(JavascriptExecutor)driver;
+		js.executeScript("arguments[0].scrollIntoView(true);", table);
+	}
 	public void getYearTable() throws IOException {
 		String[] heading= {"","","","","","",""};
 		System.out.println("\n Printing Year on Year Table for HomeLoan \n");
@@ -98,6 +110,29 @@ public class HomeLoanCalculator extends basePage {
 				rowNum++;
 		}
 		ExcelUtils.closeBook();
+		table.click();
 	}
+	//verifying elements presence
+		public void verifyhomePrice() {
+			asserts.assertTrue(homePrice.isDisplayed(), "HomePrice textBox is not present");
+		}
+		public void verifydownPayment() {
+			asserts.assertTrue(downPayment.isDisplayed(), "Down Payment textBox is not present");
+		}
+		public void verifyInsurance() {
+			asserts.assertTrue(insurance.isDisplayed(), "Insurance textBox is not present");
+		}
+		public void verifyloanInterest() {
+			asserts.assertTrue(loanInterest.isDisplayed(), "loan Interest textBox is not present");
+		}
+		public void verifyloanTenure() {
+			asserts.assertTrue(loanTerm.isDisplayed(), "Loan Tenure textBox is not present");
+		}
+		public void verifyfeeCharges() {
+			asserts.assertTrue(loanFees.isDisplayed(), "Loan Fee and Charges  textBox is not present");
+		}
+		public void verifyResult() {
+			asserts.assertTrue(result.isDisplayed(), "Results are not Displayed");
+		}
 
 }

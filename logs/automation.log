@@ -8,3 +8,45 @@
 12:59:10.600 [main] INFO  testBase.baseClass - closing the browser
 13:02:40.787 [main] INFO  testBase.baseClass - closing the browser
 13:13:32.004 [main] INFO  testBase.baseClass - closing the browser
+15:29:52.380 [main] INFO  TestCases.Tc001_EmiCalculator - User enters loan amount,interest rate and tenure
+15:29:54.426 [main] INFO  TestCases.Tc001_EmiCalculator - User enters loan amount,interest rate and tenure
+15:29:56.041 [main] INFO  TestCases.Tc001_EmiCalculator - User enters loan amount,interest rate and tenure
+15:29:57.450 [main] INFO  TestCases.Tc001_EmiCalculator - User enters loan amount,interest rate and tenure
+15:32:33.642 [main] INFO  testBase.baseClass - closing the browser
+15:44:33.103 [main] INFO  testBase.baseClass - closing the browser
+17:21:56.990 [main] INFO  TestCases.Tc001_EmiCalculator - User enters loan amount,interest rate and tenure
+17:21:59.214 [main] INFO  TestCases.Tc001_EmiCalculator - User enters loan amount,interest rate and tenure
+17:22:01.426 [main] INFO  TestCases.Tc001_EmiCalculator - User enters loan amount,interest rate and tenure
+17:22:03.628 [main] INFO  TestCases.Tc001_EmiCalculator - User enters loan amount,interest rate and tenure
+18:18:34.021 [main] INFO  testBase.baseClass - User is navigated to Emi Calculator page.
+18:18:39.879 [main] INFO  testBase.baseClass - User clicks car Loan.
+18:18:42.948 [main] INFO  testBase.baseClass - User checks all text boxes and enters the values
+18:18:55.420 [main] INFO  testBase.baseClass - User retrieves  full table Data
+18:18:55.632 [main] INFO  testBase.baseClass - User retrieves first month principal and interest
+18:18:55.673 [main] INFO  testBase.baseClass - User verifies emi value in result
+18:18:56.221 [main] INFO  testBase.baseClass - User is on Emi Calculator page
+18:18:58.795 [main] INFO  testBase.baseClass - User enters loan amount,interest rate and tenure
+18:18:59.028 [main] INFO  testBase.baseClass - User verifies emi result value
+18:18:59.246 [main] INFO  testBase.baseClass - User is on Emi Calculator page
+18:19:01.649 [main] INFO  testBase.baseClass - User enters loan amount,interest rate and tenure
+18:19:01.923 [main] INFO  testBase.baseClass - User verifies emi result value
+18:19:02.162 [main] INFO  testBase.baseClass - User is on Emi Calculator page
+18:19:04.484 [main] INFO  testBase.baseClass - User enters loan amount,interest rate and tenure
+18:19:04.752 [main] INFO  testBase.baseClass - User verifies emi result value
+18:19:07.237 [main] INFO  testBase.baseClass - User clicks on Home Loan Calculator
+18:19:07.719 [main] INFO  testBase.baseClass - User checks each textbox .
+18:19:11.237 [main] INFO  testBase.baseClass - User enters relevant details.
+18:19:11.783 [main] INFO  testBase.baseClass - User captures year on year table result.
+18:19:16.986 [main] INFO  testBase.baseClass - User writes table data to Excel.
+18:19:18.699 [main] INFO  testBase.baseClass - User clicks on Loan Calculator.
+18:19:37.758 [main] INFO  testBase.baseClass - User checks each textbox and enters the details .
+18:20:00.118 [main] INFO  testBase.baseClass - User clicks on Loan Amount Calculator
+18:20:15.863 [main] INFO  testBase.baseClass - User enters the Details.
+18:20:35.121 [main] INFO  testBase.baseClass - User checks each graphs By hovering on results.
+18:20:35.364 [main] INFO  testBase.baseClass - User clicks on Loan Tenure Calculator
+18:20:54.248 [main] INFO  testBase.baseClass - User enters all relevant details
+18:21:11.756 [main] INFO  testBase.baseClass - User checks each graphs By hovering on results.
+21:15:07.960 [main] INFO  TestCases.Tc001_EmiCalculator - User enters loan amount,interest rate and tenure
+21:15:10.251 [main] INFO  TestCases.Tc001_EmiCalculator - User enters loan amount,interest rate and tenure
+21:15:12.466 [main] INFO  TestCases.Tc001_EmiCalculator - User enters loan amount,interest rate and tenure
+21:15:14.398 [main] INFO  TestCases.Tc001_EmiCalculator - User enters loan amount,interest rate and tenure

@@ -25,7 +25,11 @@ public class Hooks {
 		bc.setUp(browser);
 		driver=bc.getDriver();
 	}
-
+	
+	@AfterAll
+	public static void after_all() throws Exception
+	{	driver.quit();
+	}
      
 	@AfterStep
     public void addScreenshot(Scenario scenario) {

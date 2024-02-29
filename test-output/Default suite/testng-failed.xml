@@ -5,8 +5,26 @@
     <classes>
       <class name="TestCases.Tc001_EmiCalculator">
         <methods>
-          <include name="setUp"/>
+          <include name="verifyLoanEmiCalcElements"/>
+          <include name="initiateDriver"/>
+          <include name="verifyCarLoanResults"/>
+          <include name="validateCarLoanResults"/>
+          <include name="clickLoanTenureCalculator"/>
+          <include name="inputCarLoanData"/>
+          <include name="verifyLoanTenureCalcElements"/>
+          <include name="loanAmountCalcUICheck"/>
+          <include name="homeLoanCalculator"/>
+          <include name="verifyLoanAMTCalcElements"/>
+          <include name="closeDriver"/>
+          <include name="loanTenureCalcUICheck"/>
+          <include name="loanEmiCalcUICheck"/>
           <include name="printCarEmiData"/>
+          <include name="verifyHomeLoanElements"/>
+          <include name="clickLoanAMTCalculator"/>
+          <include name="verifyCarLoanElements"/>
+          <include name="printHomeEmiData"/>
+          <include name="loanCalculator"/>
+          <include name="carLoanCalculator"/>
         </methods>
       </class> <!-- TestCases.Tc001_EmiCalculator -->
     </classes>

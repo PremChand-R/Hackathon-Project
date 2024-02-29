@@ -1,94 +1,77 @@
 package pageObjects;
 
 import java.util.List;
-
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.asserts.SoftAssert;
 
 public class LoanCalculator extends basePage {
 	String EMI;
+	static SoftAssert asserts= new SoftAssert();
 	public LoanCalculator(WebDriver driver) {
 		super(driver);
 	}
+	//Web Elements
+	@FindBy(id="menu-item-dropdown-2696")
+	WebElement calcDropDown;
 	@FindBy(id="menu-item-2423")
 	WebElement loanCalc;
-	
 	@FindBy(id="loan-amount-calc")
 	WebElement loanAmtCalc;
 	@FindBy(id="loan-tenure-calc")
 	WebElement loanTenureCalc;
-	
 	@FindBy(id="loanamount")
 	WebElement LoanAmount;
-	
 	@FindBy(xpath="//*[@id='loanamountslider']/span")
 	WebElement loanAmtSlider;
-	
 	@FindBy(id="loaninterest")
 	WebElement LoanInterest;
-	
 	@FindBy(xpath="//*[@id='loaninterestslider']/span")
 	WebElement loanIntrstSlider;
-	
 	@FindBy	(id="loanterm")
 	WebElement loanTerm;
-	
 	@FindBy(xpath="//*[@id='loantermslider']/span")
 	WebElement loanTermSlider;
-	
 	@FindBy(xpath ="//*[@id='ltermwrapper']/div[1]//div/label[2]")
 	WebElement termMnth;
-	
 	@FindBy(id="loanfees")
 	WebElement Fee;
-	
 	@FindBy(xpath="//*[@id='loanfeesslider']/span")
 	WebElement FeeSlider;
 	@FindBy(id="loanemi")
 	WebElement loanEMI;
 	@FindBy(xpath="//*[@id='loanemislider']/span")
 	WebElement emiSlider;
-	
 	@FindBy(xpath="//*[@id='loansummary-emi']/p/span")
 	WebElement emi;
-	
 	@FindBy(xpath="//*[@id='leschemewrapper']//div/label[1]")
 	WebElement adv;
 	@FindBy(xpath="//*[@id='leschemewrapper']//div/label[2]")
 	WebElement arrears;
-	
-	//id="emiarrears"
 	@FindBy(className = "highcharts-point")
 	List<WebElement> hover;
-	
 	@FindBy(id="startmonthyear")
 	WebElement date;
-	
 	@FindBy(xpath="//tr//td//span[@class='month'][4]")
 	WebElement month;
-	
 	@FindBy(id="yearformat")
 	WebElement dropdown; //financialyear
-	
 	@FindBy(xpath="//*[@id='ecalprintandshare']/a[1]")
 	WebElement print;
-	
 	@FindBy(xpath="//*[@id='sidebar']//print-preview-button-strip//div/cr-button[2]")
 	WebElement close;
-	
 	@FindBy(xpath="//*[@id='ecalprintandshare']/a[2]")
     WebElement share;
-	
 	@FindBy(xpath="/html/head/title")
 	WebElement title;
 	@FindBy(id="loansummary")
 	WebElement result;
 	
-	
+	//Action Methods
 	public void clickLoanCalculator() {
 		calcDropDown.click();
 		loanCalc.click();
@@ -146,6 +129,7 @@ public class LoanCalculator extends basePage {
 		Actions move5 = new Actions(driver);
 		move5.dragAndDropBy(emiSlider, 60, 0).build().perform();
 	}
+	
 	public void getResults() {
 		System.out.println(result.getText());
 		System.out.println("-----------------------");
@@ -176,6 +160,26 @@ public class LoanCalculator extends basePage {
 	    	Thread.sleep(500);
 	    	Hover.moveToElement(i).perform();
 	    }
+	}
+	
+	//verifying elements presence
+	public void verifyloanAMT() {
+		asserts.assertTrue(LoanAmount.isDisplayed(), "Loan Amount textBox is present");
+	}
+	public void verifyloanInterest() {
+		asserts.assertTrue(LoanInterest.isDisplayed(), "Loan Interest textBox is present");
+	}
+	public void verifyloanTenure() {
+		asserts.assertTrue(loanTerm.isDisplayed(), "Loan Tenure textBox is present");
+	}
+	public void verifyfeeCharges() {
+		asserts.assertTrue(Fee.isDisplayed(), "Loan Fee and Charges  textBox is present");
+	}
+	public void verifyloanEMI() {
+		asserts.assertTrue(loanEMI.isDisplayed(), "Loan Emi textBox is present");
+	}
+	public void verifyResult() {
+		asserts.assertTrue(result.isDisplayed(), "Results are present and Displayed");
 	}
 	
 	
