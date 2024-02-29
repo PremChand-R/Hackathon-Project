@@ -1,7 +1,6 @@
 package TestCases;
 
 import java.io.IOException;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import pageObjects.CarLoanCalculator;
@@ -162,7 +161,7 @@ public class Tc001_EmiCalculator extends baseClass {
 		lc.Dropdn();
 		lc.hover();
 	}
-	@AfterClass
+	@Test(priority=19,groups={"sanity","smoke","regression"})
 	public void closeDriver() {
 		tearDown();
 	}
