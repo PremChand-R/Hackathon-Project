@@ -221,7 +221,8 @@ public class CarLoanCalculator extends basePage {
 		String principalTotal=month1Data.get(2).getText();
 		// Remove commas from the string
 		principalTotal = principalTotal.replace(",", "");
-		principalTotal = principalTotal.replace("? ", "");
+		principalTotal=principalTotal.split(" ")[1];
+		//principalTotal = principalTotal.replace("? ", "");
 		// Convert the modified string into an integer and checks it is greater than 0
 		asserts.assertTrue(Integer.parseInt(principalTotal)>b,"Principal amount Results is zero");
 	}
